@@ -2,16 +2,11 @@ import './Home.css'
 
 const Home = () => {
     return (
-        <main className='home-container'>
+        <main className='home'>
             <section className='hero'>
-                <h1>El arte de infusionar</h1>
-                <p>Descubre nuestra selección artesanal de tes de origen y blends exclusivos.</p>
-                <button>Explorar Catálogo</button>
-            </section>
-
-            <section className='features'>
-                <h2>¿Por qué nuestro té?</h2>
-                <p>Seleccionamos cada hoja pensando en la experiencia final en tu taza.</p>
+                <h1>El arte de la infusión</h1>
+                <p>Descubre blends artesanales diseñados para tu momento de calma.</p>
+                <button className='cta-button'>Explorar Colección</button>
             </section>
         </main>
     )
