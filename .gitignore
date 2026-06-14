@@ -25,4 +25,4 @@ dist-ssr
 
 # Ignorar carpetas o archivos que no pertenecen al proyecto
 Honeypot/
-package.json # (Solo si este es el del otro proyecto, si es el de tu proyecto actual, no lo ignores)
+package.json
