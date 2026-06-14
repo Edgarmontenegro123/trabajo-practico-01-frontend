@@ -1,16 +1,17 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 1rem 5%;
     background: var(--white);
     border-bottom: 2px solid var(--secondary-color);
-    position: relative;
 }
 
-/* Ocultamos el botón hamburguesa por defecto en desktop */
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .hamburger {
-    display: none;
+    display: flex; /* Cambiamos a flex para que los <span> se acomoden */
     flex-direction: column;
     cursor: pointer;
     gap: 4px;
@@ -20,36 +21,25 @@
     width: 25px;
     height: 3px;
     background: var(--primary-color);
+    display: block; /* Asegura que se vean */
 }
 
-/* Responsividad para móviles */
 @media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-
     .nav-links {
-        display: none; /* Oculto por defecto */
+        display: none;
         flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: var(--white);
-        padding: 1rem 0;
-        border-bottom: 2px solid var(--secondary-color);
+        margin-top: 1rem;
+        list-style: none;
     }
 
     .nav-links.open {
-        display: flex; /* Se muestra al hacer click */
+        display: flex; /* Se despliega debajo del header */
     }
 }
 
-/* Estilos de escritorio se mantienen igual */
 @media (min-width: 769px) {
-    .nav-links {
-        display: flex;
-        list-style: none;
-        gap: 24px;
-    }
+    .navbar { display: flex; justify-content: space-between; align-items: center; }
+    .nav-header { display: contents; } /* Ignora el wrapper en escritorio */
+    .hamburger { display: none; }
+    .nav-links { display: flex; list-style: none; gap: 24px; }
 }

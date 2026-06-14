@@ -1,0 +1,27 @@
+.tienda {
+    padding: 2rem 5%;
+    margin-top: 2rem; /* Separación extra para que no choque con el nav */
+}
+
+.grid-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 1rem; /* Padding interno para que las tarjetas no toquen los bordes */
+}
+
+.card-producto {
+    flex: 1 1 250px;
+    max-width: 300px;
+    border: 1px solid var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card-producto:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}

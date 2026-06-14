@@ -8,14 +8,15 @@ const Navbar = () => {
     const toggleMenu = () => setIsOpen(!isOpen)
 
     return (
-        <nav className='navbar'>
-            <div className='logo'>Mi Tienda</div>
+        <nav className={`navbar ${isOpen ? 'menu-open' : ''}`}>
 
-            {/* Botón hamburguesa (visible solo en móvil) */}
-            <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
-                <span></span>
-                <span></span>
-                <span></span>
+            <div className='nav-header'>
+                <div className='logo'>Mi Tienda</div>
+                <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
             <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
