@@ -3,25 +3,53 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    background-color: var(--white);
+    background: var(--white);
     border-bottom: 2px solid var(--secondary-color);
+    position: relative;
 }
 
-.navbar ul {
-    display: flex;
-    list-style: none;
-    gap: 24px;
+/* Ocultamos el botón hamburguesa por defecto en desktop */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
 }
 
-.navbar a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: 500;
-    font-size: 1rem;
-    transition: all 0.3s ease;
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--primary-color);
 }
 
-.navbar a:hover {
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none; /* Oculto por defecto */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        padding: 1rem 0;
+        border-bottom: 2px solid var(--secondary-color);
+    }
+
+    .nav-links.open {
+        display: flex; /* Se muestra al hacer click */
+    }
+}
+
+/* Estilos de escritorio se mantienen igual */
+@media (min-width: 769px) {
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 24px;
+    }
 }
