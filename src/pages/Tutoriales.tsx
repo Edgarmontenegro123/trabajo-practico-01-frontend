@@ -1,6 +1,6 @@
-import './Home.css'
+import './Tutoriales.css'
 
-const Home = () => {
+const Tutoriales = () => {
     return (
         <main className='home-container'>
             <section className='hero'>
@@ -17,4 +17,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Tutoriales

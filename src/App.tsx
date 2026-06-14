@@ -1,8 +1,13 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Layout from './components/Layout'
+import Home from './pages/Home'
+import Tienda from './pages/Tienda'
+import Tutoriales from './pages/Tutoriales'
+import MenuTienda from './pages/MenuTienda'
+import TrabajaConNosotros from './pages/TrabajaConNosotros'
+import Franquicias from './pages/TrabajaConNosotros'
+import Contacto from './pages/Contacto'
 
-
-const Home = () => <h1>Página de Inicio</h1>
 
 function App() {
     return (
@@ -10,12 +15,12 @@ function App() {
             <Layout>
                 <Routes>
                     <Route path='/' element={<Home />} />
-                    <Route path='/tienda' element={<Home />} />
-                    <Route path='/tutoriales' element={<Home />} />
-                    <Route path='/menu-tienda' element={<Home />} />
-                    <Route path='/trabaja-en-tdc' element={<Home />} />
-                    <Route path='/franquicias' element={<Home />} />
-                    <Route path='/contacto' element={<Home />} />
+                    <Route path='/tienda' element={<Tienda />} />
+                    <Route path='/tutoriales' element={<Tutoriales />} />
+                    <Route path='/menu-tienda' element={<MenuTienda />} />
+                    <Route path='/trabaja-en-tdc' element={<TrabajaConNosotros />} />
+                    <Route path='/franquicias' element={<Franquicias />} />
+                    <Route path='/contacto' element={<Contacto />} />
                 </Routes>
             </Layout>
         </BrowserRouter>
