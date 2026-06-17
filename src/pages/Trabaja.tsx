@@ -1,6 +1,6 @@
-import './TrabajaConNosotros.css'
+import './Trabaja.css'
 
-const TrabajaConNosotros = () => {
+const Trabaja = () => {
     return (
         <main className='home-container'>
             <section className='hero'>
@@ -17,4 +17,4 @@ const TrabajaConNosotros = () => {
     )
 }
 
-export default TrabajaConNosotros
+export default Trabaja

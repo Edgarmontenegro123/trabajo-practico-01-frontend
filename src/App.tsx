@@ -4,8 +4,8 @@ import Home from './pages/Home'
 import Tienda from './pages/Tienda'
 import Tutoriales from './pages/Tutoriales'
 import MenuTienda from './pages/MenuTienda'
-import TrabajaConNosotros from './pages/TrabajaConNosotros'
-import Franquicias from './pages/TrabajaConNosotros'
+import Trabaja from './pages/Trabaja.tsx'
+import Franquicias from './pages/Trabaja.tsx'
 import Contacto from './pages/Contacto'
 
 
@@ -18,7 +18,7 @@ function App() {
                     <Route path='/tienda' element={<Tienda />} />
                     <Route path='/tutoriales' element={<Tutoriales />} />
                     <Route path='/menu-tienda' element={<MenuTienda />} />
-                    <Route path='/trabaja-en-tdc' element={<TrabajaConNosotros />} />
+                    <Route path='/trabaja-en-tdc' element={<Trabaja />} />
                     <Route path='/franquicias' element={<Franquicias />} />
                     <Route path='/contacto' element={<Contacto />} />
                 </Routes>
