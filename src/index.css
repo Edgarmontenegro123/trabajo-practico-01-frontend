@@ -1,11 +1,11 @@
 :root {
-  /* Colores según requisitos (Marrón dorado elegante) */
-  --primary-color: #6f4e37;
-  --secondary-color: #d4af37;
-  --bg-color: #fdfbf7;
-  --text-color: #333333;
+  --primary-color: #d4af37; /* Marrón madera/tierra para textos y botones principales */
+  --secondary-color: #558B2F;  /* Verde yerba/naturaleza para acentos y botones secundarios */
+  --accent-color: #D7CCC8;     /* Un beige muy suave para fondos de tarjetas */
+  --background-color: #FAFAFA; /* Un blanco roto muy limpio */
+  --text-color: #212121;       /* Negro suave para lectura cómoda */
   --white: #ffffff;
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   /* Tipografía */
   --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,10 +18,10 @@
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--font-main), sans-serif;
-  line-height: 1.6;
+  margin: 0;
 }
 
 /* Base de navegación para que el Navbar que haremos se vea bien */
