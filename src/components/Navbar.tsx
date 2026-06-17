@@ -11,7 +11,9 @@ const Navbar = () => {
         <nav className={`navbar ${isOpen ? 'menu-open' : ''}`}>
 
             <div className='nav-header'>
-                <div className='logo'>Mundo Mate</div>
+                <div className='nav-header'>
+                    <Link to='/' className='logo'>Mundo Mate</Link>
+                </div>
                 <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
                     <span></span>
                     <span></span>
