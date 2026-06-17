@@ -2,16 +2,16 @@ import './Tutoriales.css'
 
 const Tutoriales = () => {
     return (
-        <main className='home-container'>
-            <section className='hero'>
-                <h1>El arte de infusionar</h1>
-                <p>Descubre nuestra selección artesanal de tes de origen y blends exclusivos.</p>
-                <button>Explorar Catálogo</button>
+        <main className='tutoriales'>
+            <section className='hero-tutoriales'>
+                <h1>El arte de la cebadura</h1>
+                <p>Aprendé a curar tu mate, mantener la temperatura justa y lograr la espuma perfecta.</p>
+                <button className='btn-tutorial'>Ver Guías</button>
             </section>
 
-            <section className='features'>
-                <h2>¿Por qué nuestro té?</h2>
-                <p>Seleccionamos cada hoja pensando en la experiencia final en tu taza.</p>
+            <section className='info-tutoriales'>
+                <h2>¿Por qué aprender con nosotros?</h2>
+                <p>Porque un buen mate no es casualidad; es técnica, paciencia y dedicación en cada cebada.</p>
             </section>
         </main>
     )

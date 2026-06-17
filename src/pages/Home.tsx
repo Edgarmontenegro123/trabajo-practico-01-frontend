@@ -4,9 +4,9 @@ const Home = () => {
     return (
         <main className='home'>
             <section className='hero'>
-                <h1>El arte de la infusión</h1>
-                <p>Descubre blends artesanales diseñados para tu momento de calma.</p>
-                <button className='cta-button'>Explorar Colección</button>
+                <h1>El ritual de cada día</h1>
+                <p>Descubrí mates artesanales y blends seleccionados para acompañar tus mejores momentos.</p>
+                <button className='cta-button'>Explorar Nuestros Mates</button>
             </section>
         </main>
     )

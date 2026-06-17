@@ -1,0 +1,28 @@
+.nosotros {
+    padding: 2rem 5%;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.historia-hero {
+    margin-bottom: 3rem;
+}
+
+.historia-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.filosofia {
+    padding: 2rem;
+    background-color: #fcfaf8; /* Un tono crema suave */
+    border-radius: 12px;
+    border-left: 5px solid var(--secondary-color);
+}
+
+.filosofia h2 {
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}

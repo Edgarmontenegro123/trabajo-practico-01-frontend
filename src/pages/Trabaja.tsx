@@ -2,17 +2,19 @@ import './Trabaja.css'
 
 const Trabaja = () => {
     return (
-        <main className='home-container'>
-            <section className='hero'>
-                <h1>El arte de infusionar</h1>
-                <p>Descubre nuestra selección artesanal de tes de origen y blends exclusivos.</p>
-                <button>Explorar Catálogo</button>
+        <main className='trabaja'>
+            <h1>Sumate al equipo</h1>
+            <p>¿Te apasiona la cultura del mate? Estamos en constante crecimiento y siempre buscamos personas con energía positiva para formar parte de nuestros locales.</p>
+
+            <section className='busquedas'>
+                <h2>Búsquedas abiertas</h2>
+                <ul>
+                    <li>Atención al cliente (Locales CABA)</li>
+                    <li>Gestión de logística y envíos</li>
+                </ul>
             </section>
 
-            <section className='features'>
-                <h2>¿Por qué nuestro té?</h2>
-                <p>Seleccionamos cada hoja pensando en la experiencia final en tu taza.</p>
-            </section>
+            <button className='btn-trabaja'>Enviar CV a rrhh@mundomate.com</button>
         </main>
     )
 }

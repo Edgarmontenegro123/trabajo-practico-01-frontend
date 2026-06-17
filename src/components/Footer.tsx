@@ -5,8 +5,8 @@ const Footer = () => {
         <footer className='footer'>
             <div className='footer-content'>
                 <div className='footer-section'>
-                    <h3>Mi Tienda</h3>
-                    <p>El mejor té del mundo, directo a tu taza.</p>
+                    <h3>Mundo Mate</h3>
+                    <p>El ritual del mate, directo a tu mano.</p>
                 </div>
                 <div className='footer-section'>
                     <h4>Seguinos</h4>
@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='footer-bottom'>
-                <p>&copy; {new Date().getFullYear()} Mi Tienda de Té. Todos los derechos reservados.</p>
+                <p>&copy; {new Date().getFullYear()} Mundo Mate. Todos los derechos reservados.</p>
             </div>
         </footer>
     )

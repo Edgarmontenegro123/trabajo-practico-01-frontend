@@ -1,0 +1,41 @@
+.franquicias {
+    padding: 2rem 5%;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.franquicias h1 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.franquicia-info {
+    margin: 2rem 0;
+    text-align: left;
+    background-color: #fcfaf8;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+}
+
+.franquicia-info h2 {
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.btn-franquicia {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: filter 0.3s;
+}
+
+.btn-franquicia:hover {
+    filter: brightness(1.2);
+}
