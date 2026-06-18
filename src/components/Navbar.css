@@ -1,13 +1,39 @@
 .navbar {
-    padding: 1rem 5%;
-    background: var(--white);
+    padding: 0.5rem 5%; /* Un poco menos de padding vertical para que la barra no sea gigante */
+    background: var(--background-color);
     border-bottom: 2px solid var(--secondary-color);
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 4px;
 }
 
 .hamburger {

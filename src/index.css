@@ -4,7 +4,6 @@
   --accent-color: #D7CCC8;     /* Un beige muy suave para fondos de tarjetas */
   --background-color: #FAFAFA; /* Un blanco roto muy limpio */
   --text-color: #212121;       /* Negro suave para lectura cómoda */
-  --white: #ffffff;
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   /* Tipografía */
@@ -22,6 +21,13 @@ body {
   color: var(--text-color);
   font-family: var(--font-main), sans-serif;
   margin: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Base de navegación para que el Navbar que haremos se vea bien */

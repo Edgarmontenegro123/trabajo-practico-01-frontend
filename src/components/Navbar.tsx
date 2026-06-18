@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+// import Logo from '../assets/Logo.png'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -12,7 +13,11 @@ const Navbar = () => {
 
             <div className='nav-header'>
                 <div className='nav-header'>
-                    <Link to='/' className='logo'>Mundo Mate</Link>
+                    <Link to='/' className='logo'>
+                        {/*<img src={Logo} alt='Mundo Mate'/>*/}
+                        MUNDO
+                        <span>MATE</span>
+                    </Link>
                 </div>
                 <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
                     <span></span>
