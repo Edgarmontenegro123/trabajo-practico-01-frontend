@@ -1,3 +1,5 @@
+@import './styles/responsive.css';
+
 :root {
   --primary-color: #d4af37; /* Marrón madera/tierra para textos y botones principales */
   --secondary-color: #558B2F;  /* Verde yerba/naturaleza para acentos y botones secundarios */

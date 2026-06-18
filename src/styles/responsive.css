@@ -1,0 +1,45 @@
+/* src/styles/responsive.css */
+
+/* 1. Tablet horizontal (max-width: 1080px) */
+@media (max-width: 1080px) {
+    .grid-productos {
+        grid-template-columns: repeat(3, 1fr); /* Pasamos de 4 a 3 columnas si fuera necesario */
+        gap: 1.5rem;
+    }
+}
+
+/* 2. Tablet vertical (max-width: 768px) */
+@media (max-width: 768px) {
+    .grid-productos {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    }
+    .footer-grid {
+        grid-template-columns: 1fr 1fr; /* Footer en 2 columnas */
+    }
+}
+
+/* 3. Mobil 1 (max-width: 480px) */
+@media (max-width: 480px) {
+    .productos {
+        padding: 2rem 1rem; /* Reducimos padding lateral */
+    }
+    .grid-productos {
+        grid-template-columns: 1fr; /* 1 columna total */
+    }
+    .footer-grid {
+        grid-template-columns: 1fr; /* Footer en lista vertical */
+    }
+}
+
+/* 4. Mobil 2 (max-width: 375px) */
+@media (max-width: 375px) {
+    :root {
+        font-size: 16px; /* Reducimos el tamaño de fuente base para que no se corte el texto */
+    }
+    .logo {
+        font-size: 1.2rem; /* Achicamos un poco el logo */
+    }
+    .btn-agregar {
+        padding: 0.6rem; /* Botones más compactos */
+    }
+}
