@@ -1,14 +1,13 @@
 .productos {
-    padding: 2rem 5%;
-    margin-top: 2rem;
+    padding: 4rem 5%;
+    text-align: center;
 }
 
 .grid-productos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .card-producto {

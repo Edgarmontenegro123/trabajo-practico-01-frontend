@@ -1,11 +1,9 @@
 .navbar {
+    width: 100%;
     padding: 0.5rem 5%; /* Un poco menos de padding vertical para que la barra no sea gigante */
     background: var(--background-color);
     border-bottom: 2px solid var(--secondary-color);
     box-shadow: var(--shadow);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -67,6 +65,13 @@
 }
 
 @media (max-width: 768px) {
+    .nav-header {
+        display: flex;
+        justify-content: space-between; /* Empuja logo a la izq y hamburguesa a la der */
+        align-items: center;
+        width: 100%; /* CLAVE: Esto permite que los elementos se separen */
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
