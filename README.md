@@ -1,73 +1,48 @@
-# React + TypeScript + Vite
+# Mundo Mate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto desarrollado para el Trabajo Práctico 1 de la materia Frontend. 
+El objetivo fue presentar la estructura, estilos y fuentes de una tienda, adaptándola a una nueva temática: **la cultura matera**.
 
-Currently, two official plugins are available:
+Este proyecto refuerza habilidades en maquetación web, uso de Flexbox, diseño responsivo, manejo de Git/GitHub y trabajo colaborativo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Vista Previa
 
-## React Compiler
+Aquí puedes observar la interfaz principal y la sección de productos del sitio:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<img src="./src/assets/readme/Readme_01.png" alt="Portada Mundo Mate">
+<img src="./src/assets/readme/Readme_02.png" alt="Sección Productos">
 
-## Expanding the ESLint configuration
+## Características del Proyecto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* **Diseño Responsivo:** Adaptado a 4 tamaños de pantalla (Desktop, Tablet horizontal/vertical, Mobile 1 y 2).
+* **Maquetación:** Uso intensivo de `Flexbox` y `CSS Grid / Flexbox` para el posicionamiento de elementos.
+* **Buenas Prácticas:**
+    * Código limpio, indentado y documentado.
+    * Estructura basada en componentes reutilizables.
+    * Manejo de Box Model y unidades relativas (`%`, `vw`, `rem`).
+    * Optimización de imágenes (WebP, <500kb).
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tecnologías Utilizadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* **React + Vite:** Framework y entorno de desarrollo.
+* **CSS Puro:** Estilos modulares utilizando unidades relativas.
+* **Git:** Control de versiones colaborativo.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Estructura del Proyecto
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```text
+trabajo-practico-01-frontend/
+├── public/           # Archivos estáticos públicos
+├── src/
+│   ├── assets/       # Imágenes optimizadas y fuentes
+│   ├── components/   # Componentes reutilizables (Navbar, Footer, ProductCard, etc.)
+│   ├── data/         # Archivos de datos centralizados (productos.ts, etc.)
+│   ├── helpers/      # Funciones de utilidad
+│   ├── hooks/        # Hooks personalizados
+│   ├── pages/        # Componentes de página (Home, Productos, Contacto, etc.)
+│   ├── readme/       # Imágenes de muestra para el README
+│   ├── styles/       # Hojas de estilo globales y modulares
+│   ├── App.tsx       # Componente raíz
+│   └── main.tsx      # Punto de entrada de la aplicación
+├── index.html        # Archivo HTML base
+└── README.md         # Documentación del proyecto
