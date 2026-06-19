@@ -42,6 +42,9 @@
 .content span { display: block; margin-bottom: 2rem; font-size: 1.1rem; opacity: 0.9; }
 
 .btn-hero {
+    position: relative;
+    z-index: 21; /* Asegura que el botón destaque sobre el contenedor */
+    cursor: pointer;
     background: transparent;
     border: 2px solid white;
     color: white;
